@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>地图上色</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #canvas-container {
+            position: relative;
+        }
+        #draw-canvas {
+            border: 1px solid #ccc;
+            cursor: crosshair;
+        }
+    </style>
+</head>
+<body>
+    <h1>地图上色</h1>
+    <div>
+        <label>选择颜色：</label>
+        <input type="color" id="colorPicker" value="#ff0000">
+        <button onclick="clearCanvas()">清空</button>
+        <button onclick="submitDrawing()">提交作品</button>
+    </div>
+    <div id="canvas-container">
+        <canvas id="draw-canvas" width="800" height="600"></canvas>
+    </div>
+    <script src="js/draw.js"></script>
+</body>
+</html>

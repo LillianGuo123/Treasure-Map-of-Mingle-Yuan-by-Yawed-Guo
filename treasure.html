@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>藏宝与寻宝</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #map-container {
+            position: relative;
+            display: inline-block;
+        }
+        #map {
+            width: 100%;
+            max-width: 800px;
+        }
+        .marker {
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-color: red;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>藏宝与寻宝</h1>
+    <div id="mode-switch">
+        <button onclick="setMode('hide')">藏宝模式</button>
+        <button onclick="setMode('find')">寻宝模式</button>
+    </div>
+    <div id="map-container">
+        <img id="map" src="assets/map.png" alt="藏宝地图">
+    </div>
+    <script src="js/treasure.js"></script>
+</body>
+</html>
